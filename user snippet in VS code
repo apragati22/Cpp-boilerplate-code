@@ -1,8 +1,21 @@
-"body": [
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Starting": {
+	"prefix": "boilerplate code",
+	 	"body": [
 			"#include<bits/stdc++.h>",
+			"#include <ext/pb_ds/assoc_container.hpp> ",
+			"#include <ext/pb_ds/tree_policy.hpp>",
 			"using namespace std;\n",
 
 			"#define ll long long",
+			"#define ld long double",
+			"#define llmax 9223372036854775807",
+			"#define llmin -9223372036854775808",
 			"#define IM INT_MAX",
 			"#define im INT_MIN",
 			"#define all(x) (x).begin(), (x).end()",
@@ -12,14 +25,17 @@
 			"#define pll pair<ll, ll>",
 			
 			"#define pb push_back",
+			"#define mk make_pair",
 			"#define vi vector<int>",
-			"#define vll vector<ll>"
+			"#define vll vector<ll>",
 			"#define endl '\\n'",
 			"#define fr(i,l,r) for(ll i=l;i<r;i++)",
 			"#define eqfr(i,l,r) for(ll i=l;i<=r;i++)",
 			"#define bkfr(i,l,r) for(ll i=r-1;i>=l;i--)",
-			
 			"#define frit(it,end,v) {for(it = v.begin(); it!=end; it++) cout<< *it<<\" \"; cout<<endl;}",
+			
+			"#define ordered_set tree<ll, null_type,less<ll>, rb_tree_tag,tree_order_statistics_node_update>",
+			"using namespace __gnu_pbds;",
 			
 			"void yes() { cout<<\"YES\\n\"; }",
 			"void no() { cout<<\"NO\\n\"; }",
@@ -43,3 +59,6 @@
 	 		"\treturn 0;",
 			"}",
 	 	],
+	 	"description": "This is starting code for any program."
+	 }
+}
